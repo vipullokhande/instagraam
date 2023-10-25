@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "367857013527",
+    "project_id": "instaagram-d10ea",
+    "storage_bucket": "instaagram-d10ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367857013527:android:c66fc2c276264379fedd52",
+        "android_client_info": {
+          "package_name": "com.example.instagraam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm9rteG-V0m9JdNATcaw7avzrJSxl_-v8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
