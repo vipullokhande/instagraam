@@ -190,6 +190,7 @@ class _AddPostScreenState extends State<AddPostScreen> {
                                       borderRadius: BorderRadius.circular(10),
                                       borderSide:
                                           Divider.createBorderSide(context),
+//
                                     ),
                                   ),
                                 ),
