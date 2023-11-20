@@ -26,7 +26,8 @@ class _FeedScreenState extends State<FeedScreen> {
     bool isDark = Provider.of<DarkMode>(context).isDark;
     model.User user = Provider.of<UserProvider>(context).getUser;
     return Scaffold(
-      backgroundColor: isDark ? Colors.white :const Color.fromARGB(214, 0, 0, 0),
+      backgroundColor:
+          isDark ? Colors.white : const Color.fromARGB(214, 0, 0, 0),
       appBar: AppBar(
         elevation: 0,
         backgroundColor: isDark ? Colors.white : Colors.cyanAccent,
@@ -101,13 +102,14 @@ class _FeedScreenState extends State<FeedScreen> {
             );
           }
           return ListView.builder(
-              padding: const EdgeInsets.only(top: 14, bottom: 14),
-              itemCount: snapshot.data!.docs.length,
-              itemBuilder: (context, index) {
-                return PostCard(
-                  snaps: snapshot.data!.docs[index].data(),
-                );
-              });
+            padding: const EdgeInsets.only(top: 14, bottom: 14),
+            itemCount: snapshot.data!.docs.length,
+            itemBuilder: (context, index) {
+              return PostCard(
+                snaps: snapshot.data!.docs[index].data(),
+              );
+            },
+          );
         },
       ),
     );
