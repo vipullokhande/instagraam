@@ -87,7 +87,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         user.uid != widget.uid
                             ? IconButton(
                                 onPressed: () {
-                                  Get.back();
+                                  // Get.back();
                                 },
                                 icon: Icon(
                                   Icons.arrow_back_ios_new_rounded,

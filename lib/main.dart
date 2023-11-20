@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get/get.dart';
 import 'package:instagraam/provider/post_provider.dart';
 import 'package:instagraam/provider/user_provider.dart';
@@ -15,7 +16,12 @@ import 'firebase_options.dart';
 //firebase_storage,firebase_database,cloud_firestore,provider,intl,firebase_auth,uuid
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  // await Future.delayed(
+  //   const Duration(seconds: 3),
+  // );
+  // FlutterNativeSplash.remove();
   runApp(const MyApp());
 }
 

@@ -26,27 +26,30 @@ class _SearchScreenState extends State<SearchScreen> {
     bool isDark = Provider.of<DarkMode>(context).isDark;
 
     return Scaffold(
-      backgroundColor: isDark ? Colors.white :const Color.fromARGB(255, 60, 60, 60),
+      backgroundColor:
+          isDark ? Colors.white : const Color.fromARGB(255, 60, 60, 60),
       appBar: AppBar(
         elevation: 0,
         backgroundColor:
-            isDark ? Colors.white :const Color.fromARGB(255, 49, 49, 49),
+            isDark ? Colors.white : const Color.fromARGB(255, 49, 49, 49),
         title: TextFormField(
           decoration: InputDecoration(
             filled: true,
-            fillColor:
-                isDark ? Colors.white :const Color.fromARGB(255, 101, 101, 101),
+            fillColor: isDark
+                ? Colors.white
+                : const Color.fromARGB(255, 101, 101, 101),
             border: InputBorder.none,
             prefixIcon: Icon(
               Icons.search,
-              color: isDark ? const Color.fromARGB(255, 59, 58, 58) : Colors.white,
+              color:
+                  isDark ? const Color.fromARGB(255, 59, 58, 58) : Colors.white,
               size: 26,
             ),
             hintText: 'Search friends',
             hintStyle: TextStyle(
               color: isDark
-                  ?const Color.fromARGB(255, 0, 0, 0)
-                  :const Color.fromARGB(255, 255, 255, 255),
+                  ? const Color.fromARGB(255, 0, 0, 0)
+                  : const Color.fromARGB(255, 255, 255, 255),
             ),
           ),
           controller: _searchController,
@@ -139,7 +142,7 @@ class _SearchScreenState extends State<SearchScreen> {
                 }
                 return GridView.builder(
                   scrollDirection: Axis.vertical,
-                  itemCount: snapshot.data!.docs.length - 1,
+                  itemCount: snapshot.data!.docs.length,
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 3,
                     mainAxisSpacing: 4,

@@ -102,7 +102,7 @@ class _FeedScreenState extends State<FeedScreen> {
           }
           return ListView.builder(
               padding: const EdgeInsets.only(top: 14, bottom: 14),
-              itemCount: snapshot.data!.docs.length - 1,
+              itemCount: snapshot.data!.docs.length,
               itemBuilder: (context, index) {
                 return PostCard(
                   snaps: snapshot.data!.docs[index].data(),
